@@ -1,0 +1,8 @@
+# Folders
+/node_modules
+/@packages
+
+# Files
+.env
+demo.js
+demo.ts
