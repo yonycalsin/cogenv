@@ -8,7 +8,12 @@
       "@cogenv/object": "^1.0.8",
       "@cogenv/typed": "^1.0.4"
    },
-   "devDependencies": {},
+   "devDependencies": {
+      "@types/jest": "^26.0.0",
+      "jest": "^26.0.1",
+      "ts-jest": "^26.1.0",
+      "typescript": "^3.9.5"
+   },
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
    },
