@@ -20,7 +20,7 @@
       "dev": "tsc -w index.ts",
       "dev:start": "nodemon index.js",
       "test": "jest",
-      "build": "yarn prebuild && tsc index.ts",
+      "build": "yarn prebuild && tsc ",
       "prebuild": "rimraf index.js && rimraf index.d.ts"
    },
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
@@ -33,8 +33,8 @@
       "parser"
    ],
    "bugs": {
-      "url": "https://github.com/yoicalsin/cogenv/issues"
+      "url": "https://github.com/yonicalsin/cogenv/issues"
    },
-   "homepage": "https://github.com/yoicalsin/cogenv#readme",
+   "homepage": "https://github.com/yonicalsin/cogenv#readme",
    "repository": "https://github.com/yonicalsin/cogenv.git"
 }
