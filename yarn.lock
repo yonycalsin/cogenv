@@ -265,26 +265,28 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@cogenv/core@^1.0.9":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@cogenv/core/-/core-1.1.0.tgz#4f3a02faaf13e276a3b920c1882da758dc18bfe2"
-  integrity sha512-TT1i2raGp07FQqaSmhf0wKCILegXWgQIT/bFZow+Zf+o6Z9cJBA4w55qNOe+zl5Wm4EN9ocLxXptjkNgUJMIBA==
+"@cogenv/core@^1.1.5":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@cogenv/core/-/core-1.1.6.tgz#d92c15a4e46f6b649ba8eb9205fa4b3aa898562c"
+  integrity sha512-Et5Gpz9N99a6NUtliSVFWD3RcVxQYJG/3I/DacMPILDT4MrapUzpNwFALAXaMCQuJfQ0dMTAsRXP9sG+WlKBkg==
   dependencies:
-    merge-all-objects "^1.0.1"
+    dotfast "^1.0.3"
+    merge-all-objects "^1.0.4"
 
-"@cogenv/object@^1.0.8":
+"@cogenv/object@^1.1.2":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@cogenv/object/-/object-1.1.3.tgz#ffdd1f4708a2a24a855929c4dbf042506e491250"
+  integrity sha512-EBzVbXN3B615swiI5hqpMVzm0hqjw7EU4nJqNA8Cckk1YsRcy19Dx+PZ+N27syjxXD9q9x5wpO6OuVanu/knuQ==
+  dependencies:
+    dotfast "^1.0.3"
+    merge-all-objects "^1.0.4"
+
+"@cogenv/typed@^1.0.9":
   version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@cogenv/object/-/object-1.0.9.tgz#d4dfd650b6cb79f82d948b689319ced165f02a2a"
-  integrity sha512-k1XS41IuaVYpEYxTGTMq9tXv+JeBI0aNZF9o7V6unlnzqSg9SsE+vYRAllNW6yzZfjcEG+8aoNe3fMotMjh7WQ==
+  resolved "https://registry.yarnpkg.com/@cogenv/typed/-/typed-1.0.9.tgz#08872ac21685d35e4ca4d867f4392277ecbd813e"
+  integrity sha512-20IpdxcJ/326qKVn7rclsC63o9sPmov5VipyJnWSa5y9igc7JGfTLYAhhQka/Phq6Ba5qAqJcr+AmKSuLxeSrQ==
   dependencies:
-    merge-all-objects "^1.0.1"
-
-"@cogenv/typed@^1.0.4":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@cogenv/typed/-/typed-1.0.6.tgz#66ac0283137658336fba400e32a32ded6dca1166"
-  integrity sha512-pMcnF4hSzoNGZPW6CQHv3ZiwiBstlSCTm5Zmjb/7awc2Dztg0imRBsBGs7gMVAuqBwZVvtww9fcuU6OUceaeeQ==
-  dependencies:
-    merge-all-objects "^1.0.1"
+    merge-all-objects "^1.0.4"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -1324,6 +1326,13 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
+dotfast@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/dotfast/-/dotfast-1.0.3.tgz#a1aab7e029eaf13b3ff9eb8cff7412017b0ddfd4"
+  integrity sha512-5HEGhvW/caPL4IEr9gRmvCsMpda+QG4yrSCClds7BJLQ0ZJ0Qi1UG6WHTC+sW5fAtKps3abvA/5nIoteQSW+gg==
+  dependencies:
+    is-all-utils "^1.0.4"
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -1854,7 +1863,7 @@ is-accessor-descriptor@^1.0.0:
   dependencies:
     kind-of "^6.0.0"
 
-is-all-utils@^1.0.3:
+is-all-utils@^1.0.3, is-all-utils@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/is-all-utils/-/is-all-utils-1.0.5.tgz#69445f954726ece007b33d115e1919c4ba01d753"
   integrity sha512-IH5qKBZkMs3CQrgmTY0itUmggk6rEFV94bX7/g8J8lA2oEaGl6IQ0Vzs9DDzQG8ix5Q0Uc9FTdwF1K5gHPnCsw==
@@ -2702,7 +2711,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-merge-all-objects@^1.0.1:
+merge-all-objects@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/merge-all-objects/-/merge-all-objects-1.0.4.tgz#a004c8cb630fb25c6f20fc7d091a024511fd2010"
   integrity sha512-MVosQ/Svk1UpN+lTVHBfEYAZgfvOQkV4fzNIps/OtqT7TV0kjGZ3DN8SZRsu7eY7jH+RmdiRHAwPn/1HfLCyxA==
