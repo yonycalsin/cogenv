@@ -1,6 +1,6 @@
 {
    "name": "cogenv",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "description": "🚀 An efficient and flexible JavaScript library to manage environment variables",
    "main": "index.js",
    "dependencies": {
