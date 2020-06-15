@@ -1,8 +1,10 @@
 # Folders
 /node_modules
-/@packages
+/packages
 
 # Files
 .env
 demo.js
 demo.ts
+index.js
+index.d.ts
