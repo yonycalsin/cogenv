@@ -3,11 +3,11 @@ import { CogenvType, CogenvTypeOptions } from '@cogenv/typed';
 import { CogenvObject } from '@cogenv/object';
 
 interface Options extends CogenvOptions {
-   typedOptions: CogenvTypeOptions;
+   typedOptions?: CogenvTypeOptions;
    [key: string]: any;
 }
 
-export const Config = (options: Options) => {
+export const Config = (options: Options = {}) => {
    const { typedOptions, ...more } = options;
 
    Init({
@@ -18,7 +18,10 @@ export const Config = (options: Options) => {
    });
 
    // initializing typing plugin
-   Use(CogenvType, typedOptions);
+   Use<CogenvTypeOptions>(CogenvType, {
+      mergedTypes: true,
+      ...typedOptions,
+   });
 
    // Starting the object divider
    Use(CogenvObject);
