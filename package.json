@@ -15,7 +15,9 @@
       "typescript": "^3.9.5"
    },
    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "dev": "tsc -w index.ts",
+      "dev:start": "nodemon index.js",
+      "test": "jest"
    },
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "MIT",
