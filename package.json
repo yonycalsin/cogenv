@@ -4,9 +4,9 @@
    "description": "Cogenv is a module that loads environment variables from an .env file into cog.env or process.env",
    "main": "index.js",
    "dependencies": {
-      "@cogenv/core": "^1.0.9",
-      "@cogenv/object": "^1.0.8",
-      "@cogenv/typed": "^1.0.4"
+      "@cogenv/core": "^1.1.3",
+      "@cogenv/object": "^1.1.1",
+      "@cogenv/typed": "^1.0.8"
    },
    "devDependencies": {
       "@types/jest": "^26.0.0",
