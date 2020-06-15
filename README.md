@@ -105,6 +105,148 @@ cog.env.DB;
 }
 ```
 
+### 🎨 Typed
+
+`cogenv` integrates typing to convert your variables to different types from the `.env` file
+
+-  `String`
+-  `Boolean`
+-  `Number`
+
+```bash
+# This will return as type number => 3000
+APP_NUMBER=3000
+# This will return of type string => "3000"
+APP_NUMBER:string=3000
+
+# boolean type => true
+APP_LOG=yes
+# boolean type => "yes"
+APP_LOG:string=yes
+# boolean type => false
+APP_LOG=false
+# string type => "false"
+APP_LOG:string=false
+# string type => "true"
+APP_LOG="true"
+# boolean type => true
+APP_LOG:boolean="true"
+
+# type number => 8080
+APP_PORT=8080
+# type string => "8080"
+APP_PORT:string=8080
+```
+
+### 🎉 Metodo `env`
+
+the env method allows you to obtain the environment variables; this method uses the [dotfast](https://github.com/yonicalsin/dotfast) package and its functionalities are available in this method
+
+```ts
+import { env } from '@cogenv/core';
+env('APP_NAME'); //=> Cogenv
+env('APP_URL'); //=> http://localhost:3000
+```
+
+para obtener de los objetos es de la siguiente manera
+
+```ts
+env('DB.dialect'); //=> mysql
+env('DB.port'); //=> 336
+env('DB.logging'); //=> true
+```
+
+from [dotfast](https://github.com/yonicalsin/dotfast), to return some data I need, for example
+
+-  I need the application port and the database name
+
+this will return an object
+
+```ts
+env({
+   PORT: 'APP_PORT',
+   DB_NAME: 'DB.database',
+});
+/*
+{
+   PORT: 3000,
+   DB_NAME: "cogenv_database"
+}
+*/
+```
+
+let's try an array
+
+```ts
+env(['APP_PORT', 'DB.database']);
+/*
+[
+   3000,
+   "cogenv_database"
+]
+*/
+```
+
+### Options
+
+-  Path: You may specify a custom path if your file containing environment variables is located elsewhere.
+-  default: `path.resolve(process.cwd(), '.env')`
+
+```ts
+Config({
+   path: '/custom/path/to/.env',
+});
+```
+
+-  Encoding: You may specify the encoding of your file containing environment variables.
+-  default: `utf8`
+
+```ts
+Config({
+   encoding: 'latin1',
+});
+```
+
+-  Logging: you can manipulate the messages on the console
+-  default: `true`
+
+```ts
+Config({
+   logging: false,
+});
+```
+
+-  InterpolatePrefix: allows you to customize the interpolation prefix
+-  default: `$`
+
+```ts
+Config({
+   interpolatePrefix: '#',
+});
+```
+
+-  TypedOptions: allows you to add typing options, such as mode (`customized`, `auto`)
+-  default: `{mode: "auto"}`
+
+```ts
+Config({
+   typedOptions: {
+      mode: 'customized',
+   },
+});
+```
+
+### Parse
+
+The engine that analyzes the content of your file containing the environment variables is available for use. It accepts a string or buffer and returns an object with the analyzed keys and values.
+
+```ts
+import { Parse } from '@cogenv/core';
+const buf = Buffer.from('BASIC=basic');
+const config = Parse(buf); // will return an object
+console.log(typeof config, config); // object { BASIC : 'basic' }
+```
+
 ## ⭐ Support for
 
 `cogenv` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
