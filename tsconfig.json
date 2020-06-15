@@ -10,7 +10,8 @@
       "outDir": "./",
       "baseUrl": "./",
       "incremental": false,
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "typeRoots": ["node_modules/@types"]
    },
    "exclude": ["node_modules", "dist", "@packages"]
 }
