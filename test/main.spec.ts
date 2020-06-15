@@ -28,7 +28,7 @@ test('obtaining objects', () => {
       port: 336,
       localhost: 'localhost',
       user: 'root',
-      password: 5,
+      password: 'cogenv_password',
       logging: true,
       database: 'cogenv_database',
    });
