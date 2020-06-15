@@ -1,6 +1,7 @@
 # Folders
 /.vscode
 /test
+/packages
 
 # Files
 .env
