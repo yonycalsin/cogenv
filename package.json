@@ -1,7 +1,7 @@
 {
    "name": "cogenv",
    "version": "1.0.1",
-   "description": "Cogenv is a module that loads environment variables from an .env file into cog.env or process.env",
+   "description": "🚀 An efficient and flexible JavaScript library to manage environment variables",
    "main": "index.js",
    "dependencies": {
       "@cogenv/core": "^1.1.6",
