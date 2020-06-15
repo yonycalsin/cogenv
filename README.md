@@ -138,7 +138,7 @@ APP_PORT=8080
 APP_PORT:string=8080
 ```
 
-### 🎉 Metodo `env`
+### 🎉 Method `env`
 
 the env method allows you to obtain the environment variables; this method uses the [dotfast](https://github.com/yonicalsin/dotfast) package and its functionalities are available in this method
 
