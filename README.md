@@ -148,7 +148,7 @@ env('APP_NAME'); //=> Cogenv
 env('APP_URL'); //=> http://localhost:3000
 ```
 
-para obtener de los objetos es de la siguiente manera
+to obtain from the objects is as follows
 
 ```ts
 env('DB.dialect'); //=> mysql
