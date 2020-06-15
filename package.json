@@ -12,6 +12,7 @@
       "@types/jest": "^26.0.0",
       "jest": "^26.0.1",
       "nodemon": "^2.0.4",
+      "prettier-plugin-packagejson": "^2.2.5",
       "ts-jest": "^26.1.0",
       "typescript": "^3.9.5"
    },
