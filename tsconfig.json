@@ -13,5 +13,5 @@
       "esModuleInterop": true,
       "typeRoots": ["node_modules/@types"]
    },
-   "exclude": ["node_modules", "dist", "@packages"]
+   "exclude": ["node_modules", "dist", "packages", "test"]
 }
