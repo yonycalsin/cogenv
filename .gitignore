@@ -3,7 +3,6 @@
 /packages
 
 # Files
-.env
 demo.js
 demo.ts
 index.js
