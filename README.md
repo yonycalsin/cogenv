@@ -253,9 +253,9 @@ console.log(typeof config, config); // object { BASIC : 'basic' }
 
 ## 🎩 Stay in touch
 
--  Github [@yonicalsin](https://github.com/yonycalsin)
--  Twitter [@yonicalsin](https://twitter.com/yonycalsin)
--  Medium [@yonicalsin](https://medium.com/yonycalsin)
+-  Github [@yonycalsin](https://github.com/yonycalsin)
+-  Twitter [@yonycalsin](https://twitter.com/yonycalsin)
+-  Medium [@yonycalsin](https://medium.com/yonycalsin)
 
 ## Contributors
 
