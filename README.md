@@ -9,12 +9,12 @@ An efficient and flexible JavaScript library to manage environment variables
 <img src="https://img.shields.io/npm/l/cogenv" alt="Package License" /></a>
 <a href="https://www.npmjs.com/cogenv" target="_blank">
 <img src="https://img.shields.io/npm/dm/cogenv" alt="NPM Downloads" /></a>
-<a href="https://github.com/yonicalsin/cogenv" target="_blank">
+<a href="https://github.com/yonycalsin/cogenv" target="_blank">
 <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-<a href="https://github.com/yonicalsin/cogenv"><img src="https://img.shields.io/badge/Github%20Page-cogenv-yellow?style=flat-square&logo=github" /></a>
-<a href="https://github.com/yonicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-<a href="https://twitter.com/yonicalsin" target="_blank">
-<img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
+<a href="https://github.com/yonycalsin/cogenv"><img src="https://img.shields.io/badge/Github%20Page-cogenv-yellow?style=flat-square&logo=github" /></a>
+<a href="https://github.com/yonycalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+<a href="https://twitter.com/yonycalsin" target="_blank">
+<img src="https://img.shields.io/twitter/follow/yonycalsin.svg?style=social&label=Follow"></a>
 
 ## 📦 Installation
 
@@ -140,7 +140,7 @@ APP_PORT:string=8080
 
 ### 🎉 Method `env`
 
-the env method allows you to obtain the environment variables; this method uses the [dotfast](https://github.com/yonicalsin/dotfast) package and its functionalities are available in this method
+the env method allows you to obtain the environment variables; this method uses the [dotfast](https://github.com/yonycalsin/dotfast) package and its functionalities are available in this method
 
 ```ts
 import { env } from '@cogenv/core';
@@ -156,7 +156,7 @@ env('DB.port'); //=> 336
 env('DB.logging'); //=> true
 ```
 
-from [dotfast](https://github.com/yonicalsin/dotfast), to return some data I need, for example
+from [dotfast](https://github.com/yonycalsin/dotfast), to return some data I need, for example
 
 -  I need the application port and the database name
 
@@ -249,14 +249,13 @@ console.log(typeof config, config); // object { BASIC : 'basic' }
 
 ## ⭐ Support for
 
-`cogenv` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
+`cogenv` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](https://twitter.com/yonycalsin).
 
 ## 🎩 Stay in touch
 
--  Github [@yonicalsin](https://github.com/yonicalsin)
--  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
--  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--  Medium [@yonicalsin](https://medium.com/yonicalsin)
+-  Github [@yonicalsin](https://github.com/yonycalsin)
+-  Twitter [@yonicalsin](https://twitter.com/yonycalsin)
+-  Medium [@yonicalsin](https://medium.com/yonycalsin)
 
 ## Contributors
 
